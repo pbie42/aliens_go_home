@@ -1,19 +1,11 @@
-import React, { Component } from "react"
-import PropTypes from "prop-types"
-import "./App.css"
+import React, { Component } from 'react'
+import Canvas from './components/Canvas'
+import './App.css'
 
 class App extends Component {
 	render() {
-		return (
-			<div className="App">
-				<h1>{this.props.message}</h1>
-			</div>
-		)
+		return <Canvas />
 	}
-}
-
-App.propTypes = {
-	message: PropTypes.string.isRequired
 }
 
 export default App
